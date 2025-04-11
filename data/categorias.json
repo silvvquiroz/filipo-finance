@@ -1,0 +1,26 @@
+[
+    {
+        "nombre": "salidas",
+        "presupuesto": 400.00
+    },
+    {
+        "nombre": "comida",
+        "presupuesto": 200.00
+    },
+    {
+        "nombre": "taxi",
+        "presupuesto": 400.00
+    },
+    {
+        "nombre": "ropa/makeup",
+        "presupuesto": 200.00
+    },
+    {
+        "nombre": "uñas/cabello",
+        "presupuesto": 200.00
+    },
+    {
+        "nombre": "regalitos",
+        "presupuesto": 200.00
+    }
+]
