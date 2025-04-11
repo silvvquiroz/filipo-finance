@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'NombreAppFuente';
+    src: url('assets/fonts/Micfloral.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NombreCuerpoFuente';
+    src: url('assets/fonts/Study\ Case.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --gris-claro: #CBC8C8;
+    --gris-oscuro: #888888;
+    --teal: #78C3C9;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container-general {
+    background: linear-gradient(
+    to bottom, 
+    #FFFFFF 0%, 
+    rgba(255, 255, 255, 0.6) 12%, 
+    var(--teal) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
+}
+
+.header-option {
+    display: flex;
+    height: 35px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    color: var(--gris-oscuro);
+    border-radius: 16px;
+}
+
+.header-option:hover {
+    cursor: pointer;
+    background-color: #EEEEEE;
+}
+
+.header-option.selected {
+    background-color: var(--teal);
+    color: white;
+}
+
+.header-option.selected:hover {
+    background-color: #61ADB3;
+}
