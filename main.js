@@ -1,3 +1,5 @@
+// en el main tenemos el back basicamente
+
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 const fs = require('fs');
@@ -21,6 +23,7 @@ app.whenReady().then(() => {
     mainWindow.loadFile('index.html');
 });
 
+
 /************************* JSON logic **************************/
 
 // ruta al archivo json
@@ -40,7 +43,7 @@ function leerCategorias() {
     return JSON.parse(datos);
 }
 
-function leerGastoss() {
+function leerGastos() {
     const datos = fs.readFileSync(gastosPath, 'utf-8');
     return JSON.parse(datos);
 }
@@ -77,8 +80,18 @@ ipcMain.handle('obtener-ahorros', ()=> {
     return leerAhorros();
 });
 
+ipcMain.handle('obtener-gastos', ()=> {
+    return leerGastos();
+});
+
 
 // escuchar cuando el front manda datos nuevos
 ipcMain.handle('guardar-ahorros', (event, nuevosDatos) => {
     guardarAhorros(nuevosDatos);
+});
+
+ipcMain.handle('guardar-gastos', (event, nuevosDatos) => {
+    const gastosExistentes = leerGastos();
+    gastosExistentes.push(nuevosDatos);
+    guardarGastos(gastosExistentes);
 });

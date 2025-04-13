@@ -2,21 +2,25 @@
     {
         "nombre": "pensión pucp",
         "metaSoles": 14000.00,
-        "metaDolares": 0.00
+        "metaDolares": 0.00,
+        "montoActual": 700.00
     },
     {
         "nombre": "brasil 2026",
         "metaSoles": 0.00,
-        "metaDolares": 700.00
+        "metaDolares": 700.00,
+        "montoActual": 100.00
     },
     {
         "nombre": "pasaje brasil",
         "metaSoles": 0.00,
-        "metaDolares": 300.00
+        "metaDolares": 300.00,
+        "montoActual": 10.00
     },
     {
         "nombre": "título pucp",
         "metaSoles": 1500.00,
-        "metaDolares": 0.00
+        "metaDolares": 0.00,
+        "montoActual": 400.00
     }
 ]

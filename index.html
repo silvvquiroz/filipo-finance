@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Mi App</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="renderer.js"></script>
+
+    <!-- SCRIPTS ADICIONALES PARA LE FUNCIONAMIENTO -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="renderer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 <body>
     <div class="container-general">
@@ -24,10 +29,26 @@
         </div>
         <div class="body-container">
             <div id="ahorros-container" class="ahorros-container">
-                <div class="ahorro-card">
-                    <div>pensión pucp</div>
-                    <div class="grafico-ahorro-card">x</div>
-                    <div>1000</div>
+                <!-- aquí se crea el código de cada card -->
+            </div>
+            <div id="gastos-container" class="gastos-container">
+                <div class="gastos-container-inner">
+                    <div class="gastos-lista-titulo">gastos</div>
+                    <div class="gastos-lista-container">
+                        <div id="gastos-lista">
+
+                        </div>
+                        <div class="nuevo-gasto-container">
+                            <input id="fecha-input" class="gasto-input" type="date" placeholder="fecha">
+                            <input id="descripcion-input" class="gasto-input" type="text" placeholder="descripcion">
+                            <input id="monto-soles-input" class="gasto-input" type="number" placeholder="0.00">
+                            <input id="monto-dolares-input" class="gasto-input" type="number" placeholder="0.00">
+                            <input id="categoria-input" name="categoria-input" placeholder="categoria">
+                    
+                            <button type="button" onclick="guardarGastos()">➕</button>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>

@@ -1,0 +1,23 @@
+[
+  {
+    "fecha": "18/03/2025",
+    "descripcion": "bobocha",
+    "montoSoles": 13.9,
+    "metaDolares": 0,
+    "categoria": "salidas"
+  },
+  {
+    "fecha": "18/03/2025",
+    "descripcion": "aruma",
+    "montoSoles": 119.7,
+    "metaDolares": 0,
+    "categoria": "ropa/makeup"
+  },
+  {
+    "fecha": "2025-04-09",
+    "descripcion": "hola",
+    "montoSoles": 1,
+    "montoDolares": 0,
+    "categoria": "ropa/makeup"
+  }
+]
